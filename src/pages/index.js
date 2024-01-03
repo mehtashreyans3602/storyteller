@@ -19,6 +19,7 @@ const inter = Inter({
 export default function Home() {
   return (
     <div className="font-poppins text-secondary">
+      <h1 className='text-center text-3xl font-bold'>Storyteller</h1>
       <Storyteller/>
     </div>
   );

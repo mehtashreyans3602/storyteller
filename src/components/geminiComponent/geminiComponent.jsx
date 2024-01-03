@@ -48,22 +48,22 @@ const Storyteller = () => {
         <div className="flex flex-row items-center justify-start gap-8 h-full overflow-scroll p-4">
 
             <div className="p-4 flex flex-col border-2 rounded-xl border-blue-500 justify-center text-center min-w-[50vh]">
-                <div className="mb-4">
-                    <label htmlFor="apiKey" className="block text-sm font-bold">
-                        API Key:
-                    </label>
-                    <input
-                        type="text"
-                        id="apiKey"
-                        name="apiKey"
-                        value={apiKey}
-                        onChange={handleApiKeyChange}
-                        className={`${inputStyle} mt-1`}
-                    />
-                </div>
-                <h1>Storyteller</h1>
+                <h1>Enter Story Details:</h1>
                 <br />
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                    <div className="mb-4">
+                        <label htmlFor="apiKey" className="block text-sm font-bold">
+                            Google AI Studio API Key:
+                        </label>
+                        <input
+                            type="text"
+                            id="apiKey"
+                            name="apiKey"
+                            value={apiKey}
+                            onChange={handleApiKeyChange}
+                            className={`${inputStyle}`}
+                        />
+                    </div>
                     <label htmlFor="genre">Select Genre:</label>
                     <select
                         id="genre"
