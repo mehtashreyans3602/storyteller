@@ -45,7 +45,7 @@ const Storyteller = () => {
 
     const inputStyle = "border border-gray-300 rounded-md p-2"
     return (
-        <div className="flex flex-row items-center justify-start gap-8 h-full overflow-scroll p-4">
+        <div className="flex flex-col md:flex-row items-center justify-start gap-8 h-full overflow-scroll p-4">
 
             <div className="p-4 flex flex-col border-2 rounded-xl border-blue-500 justify-center text-center min-w-[50vh]">
                 <h1>Enter Story Details:</h1>
